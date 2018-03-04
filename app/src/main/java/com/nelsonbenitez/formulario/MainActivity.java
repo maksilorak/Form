@@ -132,7 +132,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     hobbies.remove("Viajes");
                 }
                 break;
-            // TODO: Veggie sandwich
         }
 
     }
@@ -144,8 +143,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         String pswd= PASSWORD.getText().toString();
         String confirma_pswd= CONFIRMA_PSWD.getText().toString();
         String mail= EMAIL.getText().toString();
-        String Otros_datos="";
-        String selecccion_final_hobbies="Hobbies\n\n";
+        String Otros_datos="Los siguientes son los datos a registrar: \n\n";
+        String selecccion_final_hobbies="Hobbies:";
 
         if (login.length()!=0 && pswd.length()!=0 && confirma_pswd.length()!=0 && mail.length()!=0 && date.length()!=0 && sexo.length()!=0
                 && date.length()!=0 && Ciudad.length()!=0 && hobbies.size()!=0)
@@ -153,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
             if (pswd.equals(confirma_pswd) && EmailEsValido(mail) && PasswordEsValido(pswd) && UsuarioValido(login) )
             {
-                Otros_datos="Login: "+ login+ "\n"
+                Otros_datos=Otros_datos+"Login: "+ login+ "\n"
                         + "Password: "+ pswd + "\n"
                         + "Email: "+ mail + "\n"
                         +"Sexo: " + sexo + "\n"
@@ -162,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 for (String Selections : hobbies )
                 {
-                    selecccion_final_hobbies=selecccion_final_hobbies+Selections+"\n";
+                    selecccion_final_hobbies=selecccion_final_hobbies+Selections+",";
                 }
             }
 
@@ -172,9 +171,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     selecccion_final_hobbies="Las contraseñas no coinciden";
                     Otros_datos="";
                 }
-                //Password no es válido, no tiene 9 caracteres mínimo
+                //Password no es válido, no tiene 8 caracteres mínimo
                 else if (!PasswordEsValido(pswd)){
-                    selecccion_final_hobbies="Password no es válido. Debe ser de mínimo 9 caracteres";
+                    selecccion_final_hobbies="Password no es válido. Debe ser de mínimo 8 caracteres";
                     Otros_datos="";
                 }
 
@@ -189,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 }
             }
 
-            selecccion_final_hobbies=Otros_datos+selecccion_final_hobbies+":\n";
+            selecccion_final_hobbies=Otros_datos+selecccion_final_hobbies+"\n";
         }
 
         else {
@@ -212,7 +211,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     //sE VALIDA QUE SEA UN PASSWORD DE 9 O MAS CARACTERES
     private boolean PasswordEsValido(String pswd) {
 
-        if (pswd!=null && pswd.length()>=9){return true;}
+        if (pswd!=null && pswd.length()>=8){return true;}
         else{return false;}
     }
 

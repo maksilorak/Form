@@ -2,12 +2,12 @@
     <string name="app_name">Formulario</string>
     <string name="Login">Login</string>
     <string name="Clave">Password</string>
-    <string name="RepeatClave">Repeta Password</string>
+    <string name="RepeatClave">Repita Password</string>
     <string name="Correo">Email</string>
     <string name="sex">Yo soy</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
-    <string name="fechaNacimiento">Naci en</string>
+    <string name="fechaNacimiento">Fecha de Nacimiento</string>
     <string name="sugerencia">DD/MM/AAAA</string>
     <string name="ciudadNacimiento">Nací en:</string>
     <string name="text_hobbies">Hobbies</string>
@@ -15,7 +15,7 @@
     <string name="musica">Música</string>
     <string name="idiomas">Idiomas</string>
     <string name="viajes">Viajes</string>
-    <string name="button_aceptar">ENVIAR</string>
+    <string name="button_aceptar">REGISTRAR</string>
     <string-array name="ciudades">
         <item>Medellín</item>
         <item>Leticia</item>
