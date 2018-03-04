@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.nelsonbenitez.formulario.MainActivity">
 
     <LinearLayout
@@ -18,26 +18,23 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            android:text="@string/Login"
+            android:layout_weight="0.5"
             android:gravity="center"
+            android:text="@string/Login"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
             android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:inputType="text"
             android:textColor="@color/blueviolet"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -49,22 +46,21 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
             android:text="@string/Clave"
-            android:gravity="center"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
             android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:inputType="textPassword"
             android:textColor="@color/blueviolet"
-            android:textSize="20dp"
-            android:layout_height="wrap_content"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -78,22 +74,21 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
             android:text="@string/RepeatClave"
-            android:gravity="center"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
             android:id="@+id/confirma_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:inputType="textPassword"
             android:textColor="@color/blueviolet"
-            android:textSize="20dp"
-            android:layout_height="wrap_content"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -107,26 +102,23 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            android:text="@string/Correo"
+            android:layout_weight="0.5"
             android:gravity="center"
+            android:text="@string/Correo"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
             android:id="@+id/email"
-            android:inputType="textEmailAddress"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
             android:textColor="@color/blueviolet"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
     </LinearLayout>
-
 
 
     <LinearLayout
@@ -139,74 +131,71 @@
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
+            android:layout_weight="0.5"
             android:gravity="center"
             android:text="@string/sex"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <RadioGroup
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
-            >
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
 
             <RadioButton
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/male"
                 android:id="@+id/masculino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:onClick="onRadioButtonClicked"
-                android:textSize="15dp"
-                android:textColor="@color/blueviolet"/>
+                android:text="@string/male"
+                android:textColor="@color/blueviolet"
+                android:textSize="15dp" />
 
             <RadioButton
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/female"
                 android:id="@+id/femenino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:onClick="onRadioButtonClicked"
-                android:textSize="15dp"
-                android:textColor="@color/blueviolet"/>
+                android:text="@string/female"
+                android:textColor="@color/blueviolet"
+                android:textSize="15dp" />
 
         </RadioGroup>
 
     </LinearLayout>
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center"
-            android:textSize="18dp"
+            android:text="@string/fechaNacimiento"
             android:textColor="@color/deepskyblue"
-            android:text="@string/fechaNacimiento" />
+            android:textSize="18dp" />
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:hint="@string/sugerencia"
             android:id="@+id/fechaNacimiento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/sugerencia"
             android:inputType="none"
+            android:onClick="getFecha"
             android:textColor="@color/blueviolet"
-            android:textSize="20dp"
-            android:onClick="getFecha" />
+            android:textSize="20dp" />
     </LinearLayout>
 
 
@@ -214,26 +203,26 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
-        >
+        android:gravity="center">
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center"
+            android:text="@string/ciudadNacimiento"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"
-            android:text="@string/ciudadNacimiento" />
+            android:textSize="20dp" />
 
         <Spinner
+            android:id="@+id/ciudades"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center"
             android:textColor="@color/blueviolet"
-            android:textSize="20dp"
-            android:id="@+id/ciudades">
+            android:textSize="20dp">
+
         </Spinner>
 
 
@@ -243,15 +232,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        >
+        android:baselineAligned="false">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/text_hobbies"
             android:textColor="@color/deepskyblue"
-            android:textSize="20dp"
-            android:gravity="center"/>
+            android:textSize="20dp" />
 
     </LinearLayout>
 
@@ -262,65 +251,59 @@
         android:gravity="center">
 
         <CheckBox
+            android:id="@+id/checkbox_guitarra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox_guitarra"
+            android:onClick="onCheckboxClicked"
             android:text="@string/guitarra"
             android:textColor="@color/blueviolet"
-            android:textSize="15dp"
-            android:onClick="onCheckboxClicked"
-            />
+            android:textSize="15dp" />
 
         <CheckBox
+            android:id="@+id/checkbox_musica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox_musica"
+            android:onClick="onCheckboxClicked"
             android:text="@string/musica"
             android:textColor="@color/blueviolet"
-            android:textSize="15dp"
-            android:onClick="onCheckboxClicked"
-            />
+            android:textSize="15dp" />
 
 
         <CheckBox
+            android:id="@+id/checkbox_idiomas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox_idiomas"
+            android:onClick="onCheckboxClicked"
             android:text="@string/idiomas"
             android:textColor="@color/blueviolet"
-            android:textSize="15dp"
-            android:onClick="onCheckboxClicked"
-            />
+            android:textSize="15dp" />
 
         <CheckBox
+            android:id="@+id/checkbox_viajes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/checkbox_viajes"
+            android:onClick="onCheckboxClicked"
             android:text="@string/viajes"
             android:textColor="@color/blueviolet"
-            android:textSize="15dp"
-            android:onClick="onCheckboxClicked"
-            />
+            android:textSize="15dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_marginTop="10dp"
-        android:gravity="center"
-        >
+        android:layout_weight="1"
+        android:gravity="center">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_aceptar"
-            android:gravity="center"
-            android:textColor="@color/mediumblue"
             android:background="@color/lightgray"
+            android:gravity="center"
             android:onClick="seleccionFinal"
-            />
+            android:text="@string/button_aceptar"
+            android:textColor="@color/mediumblue" />
     </LinearLayout>
 
 
@@ -330,15 +313,15 @@
         android:layout_marginTop="30dp"
 
         >
+
         <TextView
+            android:id="@+id/datos_registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/datos_registro"
-            android:visibility="visible"
             android:gravity="center"
             android:textColor="@color/blueviolet"
             android:textSize="15dp"
-            />
+            android:visibility="visible" />
 
     </LinearLayout>
 
