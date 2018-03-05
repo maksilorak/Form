@@ -5,6 +5,7 @@ package com.nelsonbenitez.formulario;
 import android.app.DatePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         fecha= (EditText) findViewById(R.id.fechaNacimiento); //SE BUSCA EL EDITTEXT DE LA FECHA
+        fecha.setInputType(InputType.TYPE_NULL);
         LOGIN=(EditText) findViewById(R.id.login);
         PASSWORD= (EditText) findViewById(R.id.password);
         CONFIRMA_PSWD= (EditText) findViewById(R.id.confirma_password);
